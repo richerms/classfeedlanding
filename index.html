@@ -31,7 +31,7 @@
 </head>
 
 <body>
-
+   <div id="content">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -57,7 +57,7 @@
                     <li id="aboutactive" class="">
                         <a href="#about">Sobre</a>
                     </li>
-                    <li id="contactative" class="">
+                    <li id="contactactive" class="">
                         <a href="#contact">Contatos</a>
                     </li>
                 </ul>
@@ -68,106 +68,110 @@
     </nav>
 
 
-    <!-- Header -->
-    <a name="home"></a>
-    <div class="intro-header">
-        <div class="container">
+ 
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div align="center" class="intro-message">
-                    <img src="img/logo1.png"></img>
-                        <h3>Feedback em tempo real dos eventos que frequenta.</h3>
-                        <hr class="intro-divider">
-                          <div style="width:260px"class="input-group">
-                            <input type="text" class="form-control" placeholder="Insira o código aqui..." aria-describedby="basic-addon2">
-                            <span class="input-group-btn">
-                                <button onclick="redirecionaVotacao()" class="btn btn-default" type="button">Ir</button>
-                            </span>
-                          </div>
-                 </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
-
-	<a  name="teacher"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 style="color:#FF6F00" class="section-heading">Área do Professor:<br>Veja seus feeds aqui!</h2>
-                    <label for="inputEmail" class="sr-only">Login</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Insira seu login aqui..." required=""><br>
-        <label for="inputPassword" class="sr-only">Senha</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Insira sua senha aqui..." required=""><br>
-        <button onclick="redirecionaProfessor()" class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button><br>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
-                </div>
-            </div>
-        </div>
-<br>
-        <!-- /.container -->
-
-            <a  name="about"></a>
-
-        <div class="content-section-b">
+        <!-- Header -->
+        <a name="home"></a>
+        <div class="intro-header">
             <div class="container">
-            <div class="row">
-                <div align="center" class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Quem somos?</h2>
-                    <h4 class="section-heading">Somos uma equipe que procura ajudar, tanto professor quanto aluno, a chegar ao consenso de uma boa aula. Este aplicativo busca um feedback ágil do aluno para o professor com relação ao conteúdo que foi passado em aula/palestra/evento.</h4>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div align="center" class="intro-message">
+                        <img src="img/logo1.png"></img>
+                            <h3>Feedback em tempo real dos eventos que frequenta.</h3>
+                            <hr class="intro-divider">
+                              <div style="width:260px"class="input-group">
+                                <input id="hashInput" type="text" class="form-control" placeholder="Insira o código aqui..." aria-describedby="basic-addon2">
+                                <span class="input-group-btn">
+                                    <button id="goButton" class="btn btn-default" type="button">Ir</button>
+                                </span>
+                              </div>
+                     </div>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.intro-header -->
+
+        <!-- Page Content -->
+
+    	<a  name="teacher"></a>
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 style="color:#FF6F00" class="section-heading">Área do Professor:<br>Veja seus feeds aqui!</h2>
+                        <label for="inputEmail" class="sr-only">Login</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Insira seu login aqui..." required=""><br>
+            <label for="inputPassword" class="sr-only">Senha</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Insira sua senha aqui..." required=""><br>
+            <button onclick="redirecionaProfessor()" class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button><br>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+    <br>
+            <!-- /.container -->
+
+                <a  name="about"></a>
+
+            <div class="content-section-b">
+                <div class="container">
+                <div class="row">
+                    <div align="center" class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Quem somos?</h2>
+                        <h4 class="section-heading">Somos uma equipe que procura ajudar, tanto professor quanto aluno, a chegar ao consenso de uma boa aula. Este aplicativo busca um feedback ágil do aluno para o professor com relação ao conteúdo que foi passado em aula/palestra/evento.</h4>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-        <!-- /.container -->
+            <!-- /.container -->
 
-	<a  name="contact"></a>
-    <div class="banner">
+    	<a  name="contact"></a>
+        <div class="banner">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Contatos:</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Contatos:</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <h1> <i class="fa fa-at fa-fw"></i> </h1>
+                                <p>poll.cust@gmail.com</p>
+                                <p>richerms@hotmail.com</p>
+                                <p>alano.vitor@gmail.com</p>
+                            </li>
+                            <li>
+                                <h1> <i class="fa fa-facebook fa-fw"></i> </h1>
+                                <p>/paulo.cust</p>
+                                <p>/richer.magalhaes</p>
+                                <p>/vitoralano.ataides</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <h1> <i class="fa fa-at fa-fw"></i> </h1>
-                            <p>poll.cust@gmail.com</p>
-                            <p>richerms@hotmail.com</p>
-                            <p>alano.vitor@gmail.com</p>
-                        </li>
-                        <li>
-                            <h1> <i class="fa fa-facebook fa-fw"></i> </h1>
-                            <p>/paulo.cust</p>
-                            <p>/richer.magalhaes</p>
-                            <p>/vitoralano.ataides</p>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
+            <!-- /.container -->
 
         </div>
-        <!-- /.container -->
 
     </div>
     <!-- /.banner -->
@@ -207,6 +211,14 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/test.js"></script>
+    <script src="lib/views/votingView.js"></script>
+    <script src="lib/controllers/votingController.js"></script>
+    <script src="lib/models/votingModel.js"></script>
+    <script src="lib/models/homeModel.js"></script>
+    <script src="lib/views/homeView.js"></script>
+    <script src="lib/controllers/homeController.js"></script>
+    <!--<script src="js/test.js"></script> -->
+    <script src="index.js"></script>
 
 </body>
 

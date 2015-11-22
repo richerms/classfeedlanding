@@ -170,3 +170,42 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+.btn-circle{
+  border-radius: 999px;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-color: #FF6F00;
+  border-width: 5px;
+} 
+
+#deslikebtn {
+
+    background-image: url('../img/dislike-01.png');
+}
+
+#deslikebtn:active {
+    background-image: url('../img/icon.w.dislike-01-01.png');
+    background-color: #FF6F00;
+}
+
+#likebtn {
+
+background-image: url('../img/like-01.png');
+}
+
+#likebtn:active {
+    background-image: url('../img/icon.w.like-01.png');
+    background-color: #FF6F00;
+}
+
+#msgbtn {
+
+    background-image: url('../img/coment-01.png');
+}
+
+#msgbtn:active {
+    background-image: url('../img/icon.w.coment-01-01.png');
+    background-color: #FF6F00;
+}
