@@ -182,21 +182,21 @@ p.copyright {
 
 #deslikebtn {
 
-    background-image: url('../img/dislike-01.png');
+    background-image: url('../img/dislike.hand-01.png');
 }
 
 #deslikebtn:active {
-    background-image: url('../img/icon.w.dislike-01-01.png');
+    background-image: url('../img/dislike.hand.w-01.png');
     background-color: #FF6F00;
 }
 
 #likebtn {
 
-background-image: url('../img/like-01.png');
+background-image: url('../img/like.hand-01.png');
 }
 
 #likebtn:active {
-    background-image: url('../img/icon.w.like-01.png');
+    background-image: url('../img/like.hand.w-01.png');
     background-color: #FF6F00;
 }
 
